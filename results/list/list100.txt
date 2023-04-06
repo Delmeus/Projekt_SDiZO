@@ -1,0 +1,8 @@
+AUTOMATYCZNY TEST LISTY O ROZMIARZE: 100
+CZAS TWORZENIA LISTY 0 milisekund
+!Dodawanie elementu na początek 1 mikrosekund 1300 nanosekund
+Dodawanie elementu na pozycje  3 mikrosekund 3600 nanosekund
+Dodawanie elementu na koniec   0 mikrosekund 600 nanosekund
+Usuwanie elementu z poczatku   0 mikrosekund 700 nanosekund
+Usuwanie elementu z pozycji    1 mikrosekund 1000 nanosekund
+Usuwanie elementu z konca      0 mikrosekund 400 nanosekund

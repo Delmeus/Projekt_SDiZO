@@ -1,0 +1,4 @@
+AUTOMATYCZNY TEST KOPCA O ROZMIARZE: 1000000
+CZAS TWORZENIA KOPCA 356 milisekund
+!Dodawanie elementu 0 mikrosekund 400 nanosekund
+Usuwanie elementu 1545 mikrosekund 1545600 nanosekund

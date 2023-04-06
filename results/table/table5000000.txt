@@ -1,0 +1,8 @@
+AUTOMATYCZNY TEST TABLICY DYNAMICZNEJ O ROZMIARZE: 5000000
+CZAS TWORZENIA TABLICY 1705 milisekund
+!Dodawanie elementu na początek 5548 mikrosekund 5548300 nanosekund
+Dodawanie elementu na pozycje  5618 mikrosekund 5618700 nanosekund
+Dodawanie elementu na koniec   5694 mikrosekund 5694700 nanosekund
+Usuwanie elementu z poczatku   5443 mikrosekund 5443000 nanosekund
+Usuwanie elementu z pozycji    5853 mikrosekund 5853600 nanosekund
+Usuwanie elementu z konca      5711 mikrosekund 5711600 nanosekund

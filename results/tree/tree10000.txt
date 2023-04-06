@@ -1,0 +1,5 @@
+AUTOMATYCZNY TEST DRZEWA BST O ROZMIARZE: 10000
+CZAS TWORZENIA DRZEWA BST: 5 milisekund
+Wyszukiwanie elementu 0 mikrosekund 900 nanosekund
+Dodawanie elementu 2 mikrosekund 2100 nanosekund
+Usuwanie elementu 0 microseconds 900 nanoseconds
