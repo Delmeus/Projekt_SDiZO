@@ -27,7 +27,8 @@ void Tester::testTable() {
                      "6. Delete element at the beginning\n"
                      "7. Delete element at given position\n"
                      "8. Delete element at the end\n"
-                     "9. Exit test\n";
+                     "9. Search for element\n"
+                     "10. Exit test\n";
 
         value = new int[2]; //value[0] - wartość value[1] - pozycja
         std::cin >> answer;
@@ -96,7 +97,16 @@ void Tester::testTable() {
                 std::cout << "\nTime taken to perform last operation: " << timer.nano() << " nanoseconds or " << timer.micro() << " microseconds\n";
                 break;
             }
-            case 9: break;
+            case 9:{
+                std::cout << "Value: ";
+                std::cin >> value[0];
+                timer.start();
+                table.findValue(value[0]);
+                timer.stop();
+                std::cout << "Time taken to perform last operation: " << timer.nano() << " nanoseconds or " << timer.micro() << " microseconds\n";
+            }
+            case 10:
+                break;
             default:{
                 std::cout << "\nWrong choice, try again\n";
                 break;
@@ -104,8 +114,8 @@ void Tester::testTable() {
 
         }
 
-        free(value);
-    }while(answer != 9);
+        delete[] value;
+    }while(answer != 10);
 
 }
 
@@ -124,7 +134,8 @@ void Tester::testList() {
                      "6. Delete element at the beginning\n"
                      "7. Delete element at given position\n"
                      "8. Delete element at the end\n"
-                     "9. Exit test\n";
+                     "9. Search for element\n"
+                     "10. Exit test\n";
         value = new int[2];
         std::cin >> answer;
         switch (answer) {
@@ -194,15 +205,22 @@ void Tester::testList() {
                 break;
             }
             case 9: {
-                break;
+                std::cout << "Value: ";
+                std::cin >> value[0];
+                timer.start();
+                list.findValue(value[0]);
+                timer.stop();
+                std::cout << "Time taken to perform last operation: " << timer.nano() << " nanoseconds or " << timer.micro() << " microseconds\n";
             }
+            case 10:
+                break;
             default:{
                 std::cout << "\nWrong choice, try again\n";
                 break;
             }
         }
         free(value);
-    }while(answer != 9);
+    }while(answer != 10);
 }
 
 void Tester::testHeap() {
@@ -216,7 +234,8 @@ void Tester::testHeap() {
                      "2. Clear screen\n"
                      "3. Add element\n"
                      "4. Delete element\n"
-                     "5. Exit test\n";
+                     "5. Find element\n"
+                     "6. Exit test\n";
         value = new int;
         std::cin >> answer;
         switch (answer) {
@@ -247,6 +266,14 @@ void Tester::testHeap() {
                 break;
             }
             case 5:{
+                std::cout << "\nValue: ";
+                std::cin >> *value;
+                timer.start();
+                heap.findValue(*value);
+                timer.stop();
+                std::cout << "Time taken to perform last operation: " << timer.nano() << " nanoseconds or " << timer.micro() << " microseconds\n";
+            }
+            case 6:{
                 break;
             }
             default:{
@@ -254,7 +281,7 @@ void Tester::testHeap() {
                 break;
             }
         }
-    } while (answer != 5);
+    } while (answer != 6);
 }
 
 void Tester::testBST() {

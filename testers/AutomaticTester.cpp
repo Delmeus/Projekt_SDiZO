@@ -15,7 +15,7 @@
 
 AutomaticTester::AutomaticTester() = default;
 
-void AutomaticTester::testTable(long results[6], int i) {
+void AutomaticTester::testTable(long results[7], int i) {
     //utworzenie struktury
     auto table = Table();
     //utworzenie stopera
@@ -96,12 +96,21 @@ void AutomaticTester::testTable(long results[6], int i) {
         file << "Usuwanie elementu z konca      " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
         results[5] += timer.nano();
 
+        //test wyszukiwania elementu
+        value = dis(gen);
+        timer.start();
+        table.findValue(value);
+        timer.stop();
+        std::cout << "Searching for element:              "<< timer.nano() << " nanoseconds\n";
+        file << "Wyszukiwanie elementu          " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[6] += timer.nano();
+
         file.close();
     }
 
 }
 
-void AutomaticTester::testList(long results[6], int i) {
+void AutomaticTester::testList(long results[7], int i) {
     //utworzenie listy
     auto list = List();
     auto timer = Timer();
@@ -128,6 +137,7 @@ void AutomaticTester::testList(long results[6], int i) {
 
         file << "CZAS TWORZENIA LISTY " << timer.mili() << " milisekund\n";
         std::cout << "\nCreation of list:                   " << timer.mili() << " miliseconds\n";
+
         //test dodawania wartosci na początek
         timer.start();
         list.addElementBeginning(value);
@@ -179,11 +189,20 @@ void AutomaticTester::testList(long results[6], int i) {
         file << "Usuwanie elementu z konca      " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
         results[5] += timer.nano();
 
+        //test wyszukiwania elementu
+        value = dis(gen);
+        timer.start();
+        list.findValue(value);
+        timer.stop();
+        std::cout << "Searching for element:              "<< timer.nano() << " nanoseconds\n";
+        file << "Wyszukiwanie elementu          " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[6] += timer.nano();
+
         file.close();
     }
 }
 
-void AutomaticTester::testHeap(long results[2], int i) {
+void AutomaticTester::testHeap(long results[3], int i) {
     //tworzenie kopca
     auto heap = Heap();
     auto timer = Timer();
@@ -209,12 +228,13 @@ void AutomaticTester::testHeap(long results[2], int i) {
 
         std::cout << "\nCreation of heap: " << timer.mili() << " milisekund\n";
         file << "CZAS TWORZENIA KOPCA " << timer.mili() << " milisekund\n";
+        
         //test dodawania elementu
         value = dis(gen);
         timer.start();
         heap.insertElement(value);
         timer.stop();
-        std::cout << "Adding element: " << timer.micro() << " microseconds " << timer.nano() << " n\n";
+        std::cout << "Adding element:        " << timer.micro() << " microseconds " << timer.nano() << " n\n";
         file << "Dodawanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
         results[0] += timer.nano();
 
@@ -222,9 +242,18 @@ void AutomaticTester::testHeap(long results[2], int i) {
         timer.start();
         heap.deleteElement();
         timer.stop();
-        std::cout << "Deleting element: " << timer.micro() << " microseconds " << timer.nano() << " ns\n";
+        std::cout << "Deleting element:      " << timer.micro() << " microseconds " << timer.nano() << " ns\n";
         file << "Usuwanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
         results[1] += timer.nano();
+
+        //test wyszukiwania elementu
+        value = dis(gen);
+        timer.start();
+        heap.findValue(value);
+        timer.stop();
+        std::cout << "Searching for element: " << timer.micro() << " microseconds " << timer.nano() << " ns\n";
+        file << "Szukanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[2] += timer.nano();
 
     }
 }
