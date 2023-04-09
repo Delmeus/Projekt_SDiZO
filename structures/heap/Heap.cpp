@@ -101,3 +101,18 @@ void Heap::swap(int *a, int *b) {
     *a = *b;
     *b = temp;
 }
+
+//wyszukiwanie elementu
+bool Heap::findValue(int value) {
+    //iterujemy po każdym elemencie
+    for(int i = 0; i < size; i++){
+        //jesli znaleziono element zwroc true
+        if(pointer[i] == value) {
+            std::cout << "\nValue was found\n";
+            return true;
+        }
+    }
+    //jesli nie znaleziono elementu zwroc false
+    std::cout << "\nValue was not found\n";
+    return false;
+}

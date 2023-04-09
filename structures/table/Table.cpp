@@ -205,6 +205,20 @@ bool Table::doesExist() const {
     return pointer != nullptr;
 }
 
+bool Table::findValue(int value) {
+    //iterujemy po każdym elemencie
+    for(int i = 0; i < size; i++){
+        //jesli znaleziono element zwroc true
+        if(pointer[i] == value) {
+            std::cout << "\nValue was found\n";
+            return true;
+        }
+    }
+    //jesli nie znaleziono elementu zwroc false
+    std::cout << "\nValue was not found\n";
+    return false;
+}
+
 //void Table::saveTableToFile() const{
 //    std::ofstream file(R"(iofiles\output.txt)");
 //    if(file.is_open() && pointer != nullptr){

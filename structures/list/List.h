@@ -23,6 +23,7 @@ public:
     void deleteFirstElement();
     void deleteLastElement();
     void deleteElementPosition(int position);
+    bool findValue(int value);
     void showList();
 
 private:

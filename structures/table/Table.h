@@ -21,6 +21,7 @@ public:
     void deleteElementBeginning();
     void deleteElementEnd();
     void deleteElementPosition(int position);
+    bool findValue(int value);
     void showTable() const;
     void saveTableToFile() const;
     bool doesExist() const;

@@ -230,3 +230,21 @@ void List::showList() {
         currentElement = currentElement->next;
     }
 }
+
+bool List::findValue(int value) {
+    //przypisujemy element bieżący jako pierwszy element
+    currentElement = firstElement;
+    //dopóki bieżący element rózny od NULL
+    while(currentElement){
+        //jeśli znaleziono wartość zwróc true
+        if(currentElement->value == value) {
+            std::cout << "\nValue was found\n";
+            return true;
+        }
+        //jeśli nie znaleziono wartości rozpatrz kolejny element
+        currentElement = currentElement->next;
+    }
+    //jeśli skończyła się pętla to zwróc false
+    std::cout << "\nValue was not found\n";
+    return false;
+}

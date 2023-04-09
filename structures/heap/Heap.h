@@ -18,6 +18,7 @@ public:
     void deleteElement();
     void showHeap() const;
     void insertElement(int value);
+    bool findValue(int value);
 
 private:
     static int parent(int i);
