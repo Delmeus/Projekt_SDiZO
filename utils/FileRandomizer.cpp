@@ -12,8 +12,7 @@
 
 void FileRandomizer::knownSizeWrite(int size) {
 
-    //R"(E:\Studia\IV semestr\SDiZO\Projekt\projekt_pierwszy\structure.txt)"
-    std::ofstream file(R"(E:\Studia\IV semestr\SDiZO\Projekt\projekt_pierwszy\iofiles\structure.txt)");
+    std::ofstream file(R"(iofiles\structure.txt)");
     int val;
     std::random_device rd;
     std::mt19937 gen(rd());

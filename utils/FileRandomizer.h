@@ -8,7 +8,7 @@
 
 class FileRandomizer {
 public:
-    void knownSizeWrite(int size);
+    static void knownSizeWrite(int size);
 };
 
 

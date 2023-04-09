@@ -15,20 +15,23 @@
 
 AutomaticTester::AutomaticTester() = default;
 
-void AutomaticTester::testTable() {
+void AutomaticTester::testTable(long results[6], int i) {
     //utworzenie struktury
     auto table = Table();
+    //utworzenie stopera
     auto timer = Timer();
     timer.start();
     table.createTable();
     timer.stop();
     //wyznaczenie ścieżki pliku z wynikami
-    std::string s1= std::to_string(table.size);
-    std::string s2 = "E:/Studia/IV semestr/SDiZO/Projekt/projekt_pierwszy/results/table/table" + s1 + ".txt";
-    std::ofstream file(s2);
+    std::string s1 = std::to_string(table.size);
+    std::string s2 = "results/table/table" + s1 + ".txt";
+    std::ofstream file;
+    //jeżeli wykonujemy test nr 1 to otwieramy plik w trybie nadpisywania
+    if(i == 1) file.open(s2);
+    //w innym przypadku dopisujemy dane
+    else file.open(s2, std::ios::app);
     if (file.is_open()) {
-        //utworzenie stopera
-
         int value, position;
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -37,10 +40,10 @@ void AutomaticTester::testTable() {
 
         //wylosowanie wartosci
         value = dis(gen);
-        file << "AUTOMATYCZNY TEST TABLICY DYNAMICZNEJ O ROZMIARZE: " << table.size << std::endl;
+        file << "Test nr: " << i << std::endl;
 
-        file << "CZAS TWORZENIA TABLICY " << timer.mili() << " milisekund\n!";
-        std::cout << "\nCreation of table:                  " << timer.mili() << " miliseconds\n";
+        file << "CZAS TWORZENIA TABLICY " << timer.mili() << " milisekund\n";
+        std::cout << "\nCreation of table:                  " << timer.mili() << " miliseconds";
 
         //test dodawania wartosci na początek tablicy
         timer.start();
@@ -48,6 +51,7 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "\nAdding element at the beginning:    " << timer.micro() << " microseconds\n";
         file << "Dodawanie elementu na początek " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[0] += timer.nano();
 
         //test dodawania wartosci na podaną pozycję tablicy
         position = distribution(gen);
@@ -56,6 +60,7 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "Adding element at given position:   "<< timer.micro() << " microseconds\n";
         file << "Dodawanie elementu na pozycje  " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[1] += timer.nano();
 
         //test dodawania wartosci na koniec tablicy
         value = dis(gen);
@@ -64,6 +69,7 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "Adding element at the end:          " << timer.micro() << " microseconds\n";
         file << "Dodawanie elementu na koniec   " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[2] += timer.nano();
 
         //test usuwania elementu z początku
         timer.start();
@@ -71,6 +77,7 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "Deleting first element:             " << timer.micro() << " microseconds\n";
         file << "Usuwanie elementu z poczatku   " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[3] += timer.nano();
 
         //test usuwania elementu z pozycji
         position = distribution(gen);
@@ -79,6 +86,7 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "Deleting element from position:     " << timer.micro() << " microseconds\n";
         file << "Usuwanie elementu z pozycji    " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[4] += timer.nano();
 
         //test usuwania elementu z końca
         timer.start();
@@ -86,16 +94,14 @@ void AutomaticTester::testTable() {
         timer.stop();
         std::cout << "Deleting element from the end:      "<< timer.micro() << " microseconds\n";
         file << "Usuwanie elementu z konca      " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[5] += timer.nano();
 
         file.close();
-        std::cout << "\nEnd of test, press ENTER to continue..." << std::endl;
-        std::cin.ignore(10000, '\n');
-        getchar();
     }
 
 }
 
-void AutomaticTester::testList() {
+void AutomaticTester::testList(long results[6], int i) {
     //utworzenie listy
     auto list = List();
     auto timer = Timer();
@@ -103,8 +109,12 @@ void AutomaticTester::testList() {
     list.createList();
     timer.stop();
     std::string s1= std::to_string(list.size);
-    std::string s2 = "E:/Studia/IV semestr/SDiZO/Projekt/projekt_pierwszy/results/list/list" + s1 + ".txt";
-    std::ofstream file(s2);
+    std::string s2 = "results/list/list" + s1 + ".txt";
+    std::ofstream file;
+    //jeżeli wykonujemy test nr 1 to otwieramy plik w trybie nadpisywania
+    if(i == 1) file.open(s2);
+    //w innym przypadku dopisujemy dane
+    else file.open(s2, std::ios::app);
     if (file.is_open()) {
 
         int value, position;
@@ -114,7 +124,7 @@ void AutomaticTester::testList() {
         std::uniform_int_distribution<> distribution(1, list.size);
 
         value = dis(gen);
-        file << "AUTOMATYCZNY TEST LISTY O ROZMIARZE: " << list.size << std::endl;
+        file << "Test nr: " << i << std::endl;
 
         file << "CZAS TWORZENIA LISTY " << timer.mili() << " milisekund\n";
         std::cout << "\nCreation of list:                   " << timer.mili() << " miliseconds\n";
@@ -124,6 +134,7 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "\nAdding element at the beginning:    " << timer.nano() << " nanoseconds\n";
         file << "Dodawanie elementu na początek " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[0] += timer.nano();
 
         //test dodawania wartosci na podaną pozycję
         position = distribution(gen);
@@ -132,6 +143,7 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "Adding element at given position:   "<< timer.micro() << " microseconds\n";
         file << "Dodawanie elementu na pozycje  " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[1] += timer.nano();
 
         //test dodawania wartosci na koniec
         value = dis(gen);
@@ -140,6 +152,7 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "Adding element at the end:          " << timer.nano() << " nanoseconds\n";
         file << "Dodawanie elementu na koniec   " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[2] += timer.nano();
 
         //test usuwania elementu z początku
         timer.start();
@@ -147,6 +160,7 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "Deleting first element:             " << timer.nano() << " nanoseconds\n";
         file << "Usuwanie elementu z poczatku   " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[3] += timer.nano();
 
         //test usuwania elementu z pozycji
         position = distribution(gen);
@@ -155,6 +169,7 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "Deleting element from position:     " << timer.micro() << " microseconds\n";
         file << "Usuwanie elementu z pozycji    " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[4] += timer.nano();
 
         //test usuwania elementu z końca
         timer.start();
@@ -162,15 +177,13 @@ void AutomaticTester::testList() {
         timer.stop();
         std::cout << "Deleting element from the end:      "<< timer.nano() << " nanoseconds\n";
         file << "Usuwanie elementu z konca      " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[5] += timer.nano();
 
         file.close();
-        std::cout << "\nEnd of test, press ENTER to continue..." << std::endl;
-        std::cin.ignore(10000, '\n');
-        getchar();
     }
 }
 
-void AutomaticTester::testHeap() {
+void AutomaticTester::testHeap(long results[2], int i) {
     //tworzenie kopca
     auto heap = Heap();
     auto timer = Timer();
@@ -178,9 +191,13 @@ void AutomaticTester::testHeap() {
     heap.createHeap();
     timer.stop();
 
-    std::string s1= std::to_string(heap.size);
-    std::string s2 = "E:/Studia/IV semestr/SDiZO/Projekt/projekt_pierwszy/results/heap/heap" + s1 + ".txt";
-    std::ofstream file(s2);
+    std::string s1 = std::to_string(heap.size);
+    std::string s2 = "results/heap/heap" + s1 + ".txt";
+    std::ofstream file;
+    //jeżeli wykonujemy test nr 1 to otwieramy plik w trybie nadpisywania
+    if(i == 1) file.open(s2);
+    //w innym przypadku dopisujemy dane
+    else file.open(s2, std::ios::app);
     if (file.is_open()) {
 
         int value;
@@ -188,10 +205,10 @@ void AutomaticTester::testHeap() {
         std::mt19937 gen(rd());
         std::uniform_int_distribution<> dis(1, 1000000);
 
-        file << "AUTOMATYCZNY TEST KOPCA O ROZMIARZE: " << heap.size << std::endl;
+        file << "Test nr: " << i << std::endl;
 
         std::cout << "\nCreation of heap: " << timer.mili() << " milisekund\n";
-        file << "CZAS TWORZENIA KOPCA " << timer.mili() << " milisekund\n!";
+        file << "CZAS TWORZENIA KOPCA " << timer.mili() << " milisekund\n";
         //test dodawania elementu
         value = dis(gen);
         timer.start();
@@ -199,20 +216,20 @@ void AutomaticTester::testHeap() {
         timer.stop();
         std::cout << "Adding element: " << timer.micro() << " microseconds " << timer.nano() << " n\n";
         file << "Dodawanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[0] += timer.nano();
 
         //test usuwania elementu
         timer.start();
         heap.deleteElement();
         timer.stop();
-        std::cout << "Deleting element: " << timer.micro() << " microseconds" << timer.nano() << " ns\n";
+        std::cout << "Deleting element: " << timer.micro() << " microseconds " << timer.nano() << " ns\n";
         file << "Usuwanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
-        std::cout << "\nEnd of test, press ENTER to continue..." << std::endl;
-        std::cin.ignore(10000, '\n');
-        getchar();
+        results[1] += timer.nano();
+
     }
 }
 
-void AutomaticTester::testBST() {
+void AutomaticTester::testBST(long results[3], int i) {
     //tworzenie drzewa
     auto tree = Tree();
     auto timer = Timer();
@@ -220,8 +237,12 @@ void AutomaticTester::testBST() {
     tree.createTree();
     timer.stop();
     std::string s1= std::to_string(tree.getSize(tree.root));
-    std::string s2 = "E:/Studia/IV semestr/SDiZO/Projekt/projekt_pierwszy/results/tree/tree" + s1 + ".txt";
-    std::ofstream file(s2);
+    std::string s2 = "results/tree/tree" + s1 + ".txt";
+    std::ofstream file;
+    //jeżeli wykonujemy test nr 1 to otwieramy plik w trybie nadpisywania
+    if(i == 1) file.open(s2);
+    //w innym przypadku dopisujemy dane
+    else file.open(s2, std::ios::app);
     if (file.is_open()) {
 
         int value;
@@ -229,10 +250,10 @@ void AutomaticTester::testBST() {
         std::mt19937 gen(rd());
         std::uniform_int_distribution<> dis(1, 1000000);
 
-        file << "AUTOMATYCZNY TEST DRZEWA BST O ROZMIARZE: " << tree.getSize(tree.root) << std::endl;
+        file << "Test nr: " << i << std::endl;
 
         file << "CZAS TWORZENIA DRZEWA BST: " << timer.mili() << " milisekund" << std::endl;
-        std::cout << "\nCreation of BST tree: " << timer.mili() << " miliseconds\n";
+        std::cout << "\nCreation of BST tree: " << timer.mili() << " miliseconds";
 
         //test wyszukiwania elementu
         value = dis(gen);
@@ -241,6 +262,7 @@ void AutomaticTester::testBST() {
         timer.stop();
         std::cout << "\nSearching for element " << timer.micro() << " microseconds " << timer.nano() << " nanoseconds";
         file << "Wyszukiwanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
+        results[0] += timer.nano();
 
         //test dodawania elementu
         value = dis(gen);
@@ -249,7 +271,7 @@ void AutomaticTester::testBST() {
         timer.stop();
         std::cout << "\nAdding element        " << timer.micro() << " microseconds " << timer.nano() << " nanoseconds";
         file << "Dodawanie elementu " << timer.micro() << " mikrosekund " << timer.nano() << " nanosekund\n";
-
+        results[1] += timer.nano();
         //pętla zapewniająca że podany element istnieje i można go usunąć
         do{
             value = dis(gen);
@@ -259,10 +281,8 @@ void AutomaticTester::testBST() {
         timer.start();
         tree.deleteNode(value, tree.root);
         timer.stop();
-        std::cout << "\nDeleting node         "  << timer.micro() << " microseconds " << timer.nano() << " nanoseconds";
-        file << "Usuwanie elementu " << timer.micro() << " microseconds " << timer.nano() << " nanoseconds";
-        std::cout << "\nEnd of test, press ENTER to continue..." << std::endl;
-        std::cin.ignore(10000, '\n');
-        getchar();
+        std::cout << "\nDeleting node         "  << timer.micro() << " microseconds " << timer.nano() << " nanoseconds\n";
+        file << "Usuwanie elementu " << timer.micro() << " microseconds " << timer.nano() << " nanoseconds\n";
+        results[2] += timer.nano();
     }
 }

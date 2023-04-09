@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(1)
+project(projekt_pierwszy)
 
 set(CMAKE_BUILD_TYPE "Release")
 

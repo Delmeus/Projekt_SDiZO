@@ -19,7 +19,7 @@ Table::~Table() {
 }
 void Table::createTable() {
 
-    std::ifstream file(R"(E:\Studia\IV semestr\SDiZO\Projekt\projekt_pierwszy\iofiles\structure.txt)");
+    std::ifstream file(R"(iofiles\structure.txt)");
     if (file.is_open()) {
         std::string line;
         int fileSize = 0;

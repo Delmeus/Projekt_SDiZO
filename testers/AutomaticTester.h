@@ -10,10 +10,10 @@ class AutomaticTester {
 public:
     AutomaticTester();
 
-    static void testTable();
-    static void testList();
-    static void testHeap();
-    static void testBST();
+    static void testTable(long results[6], int i);
+    static void testList(long results[6], int i);
+    static void testHeap(long results[2], int i);
+    static void testBST(long results[3], int i);
 };
 
 

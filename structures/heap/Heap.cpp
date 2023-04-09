@@ -21,7 +21,7 @@ Heap::~Heap() {
 int Heap::parent(int i) { return (i-1)/2; }
 
 void Heap::createHeap() {
-    std::ifstream file(R"(E:\Studia\IV semestr\SDiZO\Projekt\projekt_pierwszy\iofiles\structure.txt)");
+    std::ifstream file(R"(iofiles\structure.txt)");
     if (file.is_open()) {
 
         std::string line;
