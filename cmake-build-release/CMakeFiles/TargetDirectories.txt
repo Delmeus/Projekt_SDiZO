@@ -1,3 +1,0 @@
-C:/Users/antek/Desktop/studia/4.sem/SDiZO projekt/projekt_pierwszy/cmake-build-release/CMakeFiles/projekt_pierwszy.dir
-C:/Users/antek/Desktop/studia/4.sem/SDiZO projekt/projekt_pierwszy/cmake-build-release/CMakeFiles/edit_cache.dir
-C:/Users/antek/Desktop/studia/4.sem/SDiZO projekt/projekt_pierwszy/cmake-build-release/CMakeFiles/rebuild_cache.dir
