@@ -1,0 +1,120 @@
+Test nr: 1
+CZAS TWORZENIA LISTY 4332 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1000 nanosekund
+Dodawanie elementu na pozycje  3692 mikrosekund 3692000 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1200 nanosekund
+Usuwanie elementu z poczatku   0 mikrosekund 900 nanosekund
+Usuwanie elementu z pozycji    28866 mikrosekund 28866200 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1800 nanosekund
+Test nr: 2
+CZAS TWORZENIA LISTY 4350 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1500 nanosekund
+Dodawanie elementu na pozycje  47294 mikrosekund 47294400 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1300 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1100 nanosekund
+Usuwanie elementu z pozycji    17278 mikrosekund 17278400 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1900 nanosekund
+Test nr: 3
+CZAS TWORZENIA LISTY 4326 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1600 nanosekund
+Dodawanie elementu na pozycje  20834 mikrosekund 20834400 nanosekund
+Dodawanie elementu na koniec   0 mikrosekund 900 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    56867 mikrosekund 56867000 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1800 nanosekund
+Test nr: 4
+CZAS TWORZENIA LISTY 4347 milisekund
+Dodawanie elementu na początek 3 mikrosekund 3300 nanosekund
+Dodawanie elementu na pozycje  61378 mikrosekund 61378000 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1200 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1600 nanosekund
+Usuwanie elementu z pozycji    23947 mikrosekund 23947600 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1500 nanosekund
+Test nr: 5
+CZAS TWORZENIA LISTY 4371 milisekund
+Dodawanie elementu na początek 4 mikrosekund 4600 nanosekund
+Dodawanie elementu na pozycje  33541 mikrosekund 33541700 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1300 nanosekund
+Usuwanie elementu z pozycji    32830 mikrosekund 32830300 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1200 nanosekund
+Test nr: 6
+CZAS TWORZENIA LISTY 4348 milisekund
+Dodawanie elementu na początek 2 mikrosekund 2000 nanosekund
+Dodawanie elementu na pozycje  36088 mikrosekund 36088200 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1900 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    48961 mikrosekund 48961500 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1400 nanosekund
+Test nr: 7
+CZAS TWORZENIA LISTY 4324 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1800 nanosekund
+Dodawanie elementu na pozycje  50155 mikrosekund 50155300 nanosekund
+Dodawanie elementu na koniec   0 mikrosekund 900 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    3964 mikrosekund 3964400 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1400 nanosekund
+Test nr: 8
+CZAS TWORZENIA LISTY 4367 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1300 nanosekund
+Dodawanie elementu na pozycje  10457 mikrosekund 10457600 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1000 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    46197 mikrosekund 46197800 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1800 nanosekund
+Test nr: 9
+CZAS TWORZENIA LISTY 4352 milisekund
+Dodawanie elementu na początek 2 mikrosekund 2000 nanosekund
+Dodawanie elementu na pozycje  37122 mikrosekund 37122300 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1700 nanosekund
+Usuwanie elementu z pozycji    56002 mikrosekund 56002200 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1100 nanosekund
+Test nr: 10
+CZAS TWORZENIA LISTY 4347 milisekund
+Dodawanie elementu na początek 2 mikrosekund 2000 nanosekund
+Dodawanie elementu na pozycje  60936 mikrosekund 60936700 nanosekund
+Dodawanie elementu na koniec   0 mikrosekund 800 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1200 nanosekund
+Usuwanie elementu z pozycji    22954 mikrosekund 22954800 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1400 nanosekund
+Test nr: 11
+CZAS TWORZENIA LISTY 4362 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1900 nanosekund
+Dodawanie elementu na pozycje  17603 mikrosekund 17603900 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1100 nanosekund
+Usuwanie elementu z poczatku   0 mikrosekund 900 nanosekund
+Usuwanie elementu z pozycji    66147 mikrosekund 66147100 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1200 nanosekund
+Test nr: 12
+CZAS TWORZENIA LISTY 4353 milisekund
+Dodawanie elementu na początek 2 mikrosekund 2500 nanosekund
+Dodawanie elementu na pozycje  36321 mikrosekund 36321500 nanosekund
+Dodawanie elementu na koniec   0 mikrosekund 900 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    13549 mikrosekund 13549400 nanosekund
+Usuwanie elementu z konca      2 mikrosekund 2000 nanosekund
+Test nr: 13
+CZAS TWORZENIA LISTY 4380 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1800 nanosekund
+Dodawanie elementu na pozycje  20574 mikrosekund 20574200 nanosekund
+Dodawanie elementu na koniec   2 mikrosekund 2000 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1900 nanosekund
+Usuwanie elementu z pozycji    51739 mikrosekund 51739800 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1700 nanosekund
+Test nr: 14
+CZAS TWORZENIA LISTY 4366 milisekund
+Dodawanie elementu na początek 1 mikrosekund 1900 nanosekund
+Dodawanie elementu na pozycje  68807 mikrosekund 68807600 nanosekund
+Dodawanie elementu na koniec   2 mikrosekund 2200 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1200 nanosekund
+Usuwanie elementu z pozycji    40501 mikrosekund 40501000 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1000 nanosekund
+Test nr: 15
+CZAS TWORZENIA LISTY 4358 milisekund
+Dodawanie elementu na początek 2 mikrosekund 2500 nanosekund
+Dodawanie elementu na pozycje  40403 mikrosekund 40403300 nanosekund
+Dodawanie elementu na koniec   1 mikrosekund 1500 nanosekund
+Usuwanie elementu z poczatku   1 mikrosekund 1400 nanosekund
+Usuwanie elementu z pozycji    51633 mikrosekund 51633600 nanosekund
+Usuwanie elementu z konca      1 mikrosekund 1200 nanosekund

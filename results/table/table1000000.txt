@@ -1,8 +1,120 @@
-AUTOMATYCZNY TEST TABLICY DYNAMICZNEJ O ROZMIARZE: 1000000
-CZAS TWORZENIA TABLICY 347 milisekund
-!Dodawanie elementu na początek 1379 mikrosekund 1379500 nanosekund
-Dodawanie elementu na pozycje  1287 mikrosekund 1287600 nanosekund
-Dodawanie elementu na koniec   1246 mikrosekund 1246100 nanosekund
-Usuwanie elementu z poczatku   1304 mikrosekund 1304500 nanosekund
-Usuwanie elementu z pozycji    1282 mikrosekund 1282200 nanosekund
-Usuwanie elementu z konca      1403 mikrosekund 1403000 nanosekund
+Test nr: 1
+CZAS TWORZENIA TABLICY 396 milisekund
+Dodawanie elementu na początek 1259 mikrosekund 1259300 nanosekund
+Dodawanie elementu na pozycje  1125 mikrosekund 1125300 nanosekund
+Dodawanie elementu na koniec   1036 mikrosekund 1036500 nanosekund
+Usuwanie elementu z poczatku   1091 mikrosekund 1091300 nanosekund
+Usuwanie elementu z pozycji    1138 mikrosekund 1138700 nanosekund
+Usuwanie elementu z konca      1016 mikrosekund 1016300 nanosekund
+Test nr: 2
+CZAS TWORZENIA TABLICY 395 milisekund
+Dodawanie elementu na początek 1381 mikrosekund 1381900 nanosekund
+Dodawanie elementu na pozycje  1011 mikrosekund 1011000 nanosekund
+Dodawanie elementu na koniec   1010 mikrosekund 1010500 nanosekund
+Usuwanie elementu z poczatku   1003 mikrosekund 1003100 nanosekund
+Usuwanie elementu z pozycji    1087 mikrosekund 1087200 nanosekund
+Usuwanie elementu z konca      996 mikrosekund 996600 nanosekund
+Test nr: 3
+CZAS TWORZENIA TABLICY 394 milisekund
+Dodawanie elementu na początek 1261 mikrosekund 1261300 nanosekund
+Dodawanie elementu na pozycje  1154 mikrosekund 1154000 nanosekund
+Dodawanie elementu na koniec   1079 mikrosekund 1079200 nanosekund
+Usuwanie elementu z poczatku   1054 mikrosekund 1054000 nanosekund
+Usuwanie elementu z pozycji    1107 mikrosekund 1107700 nanosekund
+Usuwanie elementu z konca      1043 mikrosekund 1043600 nanosekund
+Test nr: 4
+CZAS TWORZENIA TABLICY 387 milisekund
+Dodawanie elementu na początek 1379 mikrosekund 1379000 nanosekund
+Dodawanie elementu na pozycje  1007 mikrosekund 1007000 nanosekund
+Dodawanie elementu na koniec   1071 mikrosekund 1071600 nanosekund
+Usuwanie elementu z poczatku   1016 mikrosekund 1016200 nanosekund
+Usuwanie elementu z pozycji    1067 mikrosekund 1067300 nanosekund
+Usuwanie elementu z konca      1009 mikrosekund 1009900 nanosekund
+Test nr: 5
+CZAS TWORZENIA TABLICY 396 milisekund
+Dodawanie elementu na początek 1085 mikrosekund 1085100 nanosekund
+Dodawanie elementu na pozycje  1117 mikrosekund 1117900 nanosekund
+Dodawanie elementu na koniec   1145 mikrosekund 1145400 nanosekund
+Usuwanie elementu z poczatku   1095 mikrosekund 1095900 nanosekund
+Usuwanie elementu z pozycji    1205 mikrosekund 1205200 nanosekund
+Usuwanie elementu z konca      1087 mikrosekund 1087500 nanosekund
+Test nr: 6
+CZAS TWORZENIA TABLICY 392 milisekund
+Dodawanie elementu na początek 1568 mikrosekund 1568800 nanosekund
+Dodawanie elementu na pozycje  1053 mikrosekund 1053900 nanosekund
+Dodawanie elementu na koniec   1000 mikrosekund 1000200 nanosekund
+Usuwanie elementu z poczatku   1177 mikrosekund 1177800 nanosekund
+Usuwanie elementu z pozycji    1138 mikrosekund 1138800 nanosekund
+Usuwanie elementu z konca      1056 mikrosekund 1056000 nanosekund
+Test nr: 7
+CZAS TWORZENIA TABLICY 393 milisekund
+Dodawanie elementu na początek 945 mikrosekund 945800 nanosekund
+Dodawanie elementu na pozycje  993 mikrosekund 993900 nanosekund
+Dodawanie elementu na koniec   1061 mikrosekund 1061300 nanosekund
+Usuwanie elementu z poczatku   1004 mikrosekund 1004900 nanosekund
+Usuwanie elementu z pozycji    1220 mikrosekund 1220100 nanosekund
+Usuwanie elementu z konca      1002 mikrosekund 1002100 nanosekund
+Test nr: 8
+CZAS TWORZENIA TABLICY 400 milisekund
+Dodawanie elementu na początek 1002 mikrosekund 1002500 nanosekund
+Dodawanie elementu na pozycje  1204 mikrosekund 1204400 nanosekund
+Dodawanie elementu na koniec   1077 mikrosekund 1077900 nanosekund
+Usuwanie elementu z poczatku   1023 mikrosekund 1023000 nanosekund
+Usuwanie elementu z pozycji    1180 mikrosekund 1180800 nanosekund
+Usuwanie elementu z konca      1372 mikrosekund 1372400 nanosekund
+Test nr: 9
+CZAS TWORZENIA TABLICY 390 milisekund
+Dodawanie elementu na początek 990 mikrosekund 990800 nanosekund
+Dodawanie elementu na pozycje  1215 mikrosekund 1215900 nanosekund
+Dodawanie elementu na koniec   1090 mikrosekund 1090100 nanosekund
+Usuwanie elementu z poczatku   998 mikrosekund 998400 nanosekund
+Usuwanie elementu z pozycji    1170 mikrosekund 1170900 nanosekund
+Usuwanie elementu z konca      1012 mikrosekund 1012400 nanosekund
+Test nr: 10
+CZAS TWORZENIA TABLICY 389 milisekund
+Dodawanie elementu na początek 1317 mikrosekund 1317700 nanosekund
+Dodawanie elementu na pozycje  1031 mikrosekund 1031700 nanosekund
+Dodawanie elementu na koniec   1038 mikrosekund 1038800 nanosekund
+Usuwanie elementu z poczatku   1079 mikrosekund 1079800 nanosekund
+Usuwanie elementu z pozycji    1145 mikrosekund 1145200 nanosekund
+Usuwanie elementu z konca      1060 mikrosekund 1060500 nanosekund
+Test nr: 11
+CZAS TWORZENIA TABLICY 397 milisekund
+Dodawanie elementu na początek 1000 mikrosekund 1000500 nanosekund
+Dodawanie elementu na pozycje  1038 mikrosekund 1038300 nanosekund
+Dodawanie elementu na koniec   1042 mikrosekund 1042500 nanosekund
+Usuwanie elementu z poczatku   1005 mikrosekund 1005900 nanosekund
+Usuwanie elementu z pozycji    1226 mikrosekund 1226400 nanosekund
+Usuwanie elementu z konca      1009 mikrosekund 1009600 nanosekund
+Test nr: 12
+CZAS TWORZENIA TABLICY 395 milisekund
+Dodawanie elementu na początek 1074 mikrosekund 1074900 nanosekund
+Dodawanie elementu na pozycje  1045 mikrosekund 1045800 nanosekund
+Dodawanie elementu na koniec   1050 mikrosekund 1050800 nanosekund
+Usuwanie elementu z poczatku   1049 mikrosekund 1049500 nanosekund
+Usuwanie elementu z pozycji    1057 mikrosekund 1057300 nanosekund
+Usuwanie elementu z konca      1072 mikrosekund 1072700 nanosekund
+Test nr: 13
+CZAS TWORZENIA TABLICY 396 milisekund
+Dodawanie elementu na początek 1249 mikrosekund 1249900 nanosekund
+Dodawanie elementu na pozycje  1326 mikrosekund 1326000 nanosekund
+Dodawanie elementu na koniec   995 mikrosekund 995800 nanosekund
+Usuwanie elementu z poczatku   969 mikrosekund 969200 nanosekund
+Usuwanie elementu z pozycji    1526 mikrosekund 1526300 nanosekund
+Usuwanie elementu z konca      1023 mikrosekund 1023900 nanosekund
+Test nr: 14
+CZAS TWORZENIA TABLICY 401 milisekund
+Dodawanie elementu na początek 1053 mikrosekund 1053600 nanosekund
+Dodawanie elementu na pozycje  1083 mikrosekund 1083700 nanosekund
+Dodawanie elementu na koniec   1012 mikrosekund 1012900 nanosekund
+Usuwanie elementu z poczatku   1048 mikrosekund 1048300 nanosekund
+Usuwanie elementu z pozycji    1082 mikrosekund 1082300 nanosekund
+Usuwanie elementu z konca      1107 mikrosekund 1107100 nanosekund
+Test nr: 15
+CZAS TWORZENIA TABLICY 390 milisekund
+Dodawanie elementu na początek 1234 mikrosekund 1234200 nanosekund
+Dodawanie elementu na pozycje  1300 mikrosekund 1300100 nanosekund
+Dodawanie elementu na koniec   1032 mikrosekund 1032000 nanosekund
+Usuwanie elementu z poczatku   1023 mikrosekund 1023100 nanosekund
+Usuwanie elementu z pozycji    1086 mikrosekund 1086600 nanosekund
+Usuwanie elementu z konca      1018 mikrosekund 1018300 nanosekund

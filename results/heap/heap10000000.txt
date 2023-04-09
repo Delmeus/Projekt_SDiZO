@@ -1,0 +1,60 @@
+Test nr: 1
+CZAS TWORZENIA KOPCA 4052 milisekund
+Dodawanie elementu 0 mikrosekund 400 nanosekund
+Usuwanie elementu 10517 mikrosekund 10517000 nanosekund
+Test nr: 2
+CZAS TWORZENIA KOPCA 4051 milisekund
+Dodawanie elementu 0 mikrosekund 400 nanosekund
+Usuwanie elementu 9684 mikrosekund 9684700 nanosekund
+Test nr: 3
+CZAS TWORZENIA KOPCA 4096 milisekund
+Dodawanie elementu 0 mikrosekund 900 nanosekund
+Usuwanie elementu 9706 mikrosekund 9706800 nanosekund
+Test nr: 4
+CZAS TWORZENIA KOPCA 4063 milisekund
+Dodawanie elementu 0 mikrosekund 500 nanosekund
+Usuwanie elementu 10275 mikrosekund 10275200 nanosekund
+Test nr: 5
+CZAS TWORZENIA KOPCA 4062 milisekund
+Dodawanie elementu 0 mikrosekund 700 nanosekund
+Usuwanie elementu 9774 mikrosekund 9774300 nanosekund
+Test nr: 6
+CZAS TWORZENIA KOPCA 4108 milisekund
+Dodawanie elementu 1 mikrosekund 1600 nanosekund
+Usuwanie elementu 9924 mikrosekund 9924100 nanosekund
+Test nr: 7
+CZAS TWORZENIA KOPCA 4088 milisekund
+Dodawanie elementu 1 mikrosekund 1000 nanosekund
+Usuwanie elementu 9894 mikrosekund 9894000 nanosekund
+Test nr: 8
+CZAS TWORZENIA KOPCA 4137 milisekund
+Dodawanie elementu 0 mikrosekund 800 nanosekund
+Usuwanie elementu 9793 mikrosekund 9793000 nanosekund
+Test nr: 9
+CZAS TWORZENIA KOPCA 4108 milisekund
+Dodawanie elementu 0 mikrosekund 600 nanosekund
+Usuwanie elementu 10991 mikrosekund 10991600 nanosekund
+Test nr: 10
+CZAS TWORZENIA KOPCA 4061 milisekund
+Dodawanie elementu 1 mikrosekund 1200 nanosekund
+Usuwanie elementu 10461 mikrosekund 10461000 nanosekund
+Test nr: 11
+CZAS TWORZENIA KOPCA 4115 milisekund
+Dodawanie elementu 0 mikrosekund 900 nanosekund
+Usuwanie elementu 10424 mikrosekund 10424600 nanosekund
+Test nr: 12
+CZAS TWORZENIA KOPCA 4089 milisekund
+Dodawanie elementu 1 mikrosekund 1000 nanosekund
+Usuwanie elementu 10292 mikrosekund 10292500 nanosekund
+Test nr: 13
+CZAS TWORZENIA KOPCA 4094 milisekund
+Dodawanie elementu 0 mikrosekund 800 nanosekund
+Usuwanie elementu 10414 mikrosekund 10414300 nanosekund
+Test nr: 14
+CZAS TWORZENIA KOPCA 4062 milisekund
+Dodawanie elementu 0 mikrosekund 900 nanosekund
+Usuwanie elementu 10171 mikrosekund 10171900 nanosekund
+Test nr: 15
+CZAS TWORZENIA KOPCA 4081 milisekund
+Dodawanie elementu 0 mikrosekund 400 nanosekund
+Usuwanie elementu 9986 mikrosekund 9986800 nanosekund

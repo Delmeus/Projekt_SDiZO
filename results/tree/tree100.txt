@@ -1,0 +1,75 @@
+Test nr: 1
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 800 nanosekund
+Dodawanie elementu 1 mikrosekund 1300 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 2
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 200 nanosekund
+Dodawanie elementu 0 mikrosekund 800 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 3
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 700 nanosekund
+Dodawanie elementu 0 mikrosekund 700 nanosekund
+Usuwanie elementu 0 microseconds 700 nanoseconds
+Test nr: 4
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 1 mikrosekund 1500 nanosekund
+Dodawanie elementu 1 mikrosekund 1400 nanosekund
+Usuwanie elementu 1 microseconds 1100 nanoseconds
+Test nr: 5
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 700 nanosekund
+Dodawanie elementu 1 mikrosekund 1000 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 6
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 200 nanosekund
+Dodawanie elementu 0 mikrosekund 600 nanosekund
+Usuwanie elementu 0 microseconds 700 nanoseconds
+Test nr: 7
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 200 nanosekund
+Dodawanie elementu 0 mikrosekund 700 nanosekund
+Usuwanie elementu 0 microseconds 700 nanoseconds
+Test nr: 8
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 300 nanosekund
+Dodawanie elementu 2 mikrosekund 2000 nanosekund
+Usuwanie elementu 1 microseconds 1600 nanoseconds
+Test nr: 9
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 2 mikrosekund 2000 nanosekund
+Dodawanie elementu 1 mikrosekund 1300 nanosekund
+Usuwanie elementu 0 microseconds 700 nanoseconds
+Test nr: 10
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 300 nanosekund
+Dodawanie elementu 0 mikrosekund 800 nanosekund
+Usuwanie elementu 0 microseconds 700 nanoseconds
+Test nr: 11
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 200 nanosekund
+Dodawanie elementu 0 mikrosekund 600 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 12
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 400 nanosekund
+Dodawanie elementu 1 mikrosekund 1800 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 13
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 800 nanosekund
+Dodawanie elementu 2 mikrosekund 2100 nanosekund
+Usuwanie elementu 1 microseconds 1600 nanoseconds
+Test nr: 14
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 900 nanosekund
+Dodawanie elementu 0 mikrosekund 600 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
+Test nr: 15
+CZAS TWORZENIA DRZEWA BST: 0 milisekund
+Wyszukiwanie elementu 0 mikrosekund 800 nanosekund
+Dodawanie elementu 0 mikrosekund 900 nanosekund
+Usuwanie elementu 0 microseconds 600 nanoseconds
