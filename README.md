@@ -4,7 +4,7 @@ Projekt ze struktur danych i złożoności obliczeniowej
 Celem projektu jest zbadanie efektywności wykonywania operacji na różnych podstawowych strukturach danych w zależności od ich rozmiaru.
 
 Tablica dynamiczna:
--dodawanie elementu na początek tablicy
+\n-dodawanie elementu na początek tablicy
 -dodawanie elementu na pozycję o wybranym indeksie
 -dodawanie elementu na koniec tablicy
 -usuwanie elementu z początku tablicy
