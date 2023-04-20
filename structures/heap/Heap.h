@@ -16,11 +16,13 @@ public:
     int size;
     void createHeap();
     void deleteElement();
-    void showHeap() const;
+    void showHeap(int space, int index);
     void insertElement(int value);
     bool findValue(int value);
 
 private:
+    void heapify(int i);
+    int maxSize;
     static int parent(int i);
     static void swap(int *a,int *b);
 

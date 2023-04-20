@@ -10,6 +10,7 @@
 Heap::Heap() {
     pointer = nullptr;
     size = 0;
+    maxSize = 10000000;
 }
 
 Heap::~Heap() {
@@ -33,7 +34,7 @@ void Heap::createHeap() {
         if(fileSize > 0) {
 
             int i = 0;
-            pointer = new int[fileSize];
+            pointer = new int[maxSize];
             int value;
             while (std::getline(file, line)) { //wpisywanie wartosci z pliku do kopca
                 std::istringstream iss(line);
@@ -42,7 +43,7 @@ void Heap::createHeap() {
                 insertElement(value);
                 i++;
             }
-
+            for(i; i < maxSize; i++) pointer[i] = 0;
             size = fileSize;
 
         }
@@ -52,48 +53,73 @@ void Heap::createHeap() {
 }
 
 void Heap::insertElement(int value){
-    //zwiększamy zmienną przechowującą rozmiar
-    size++;
-    int i = size - 1;
-    //dodajemy nową wartość na końcu tablicy
-    pointer[i] = value;
+    //jeżeli rozmiar nie osiągnął maksymalnego
+    if(size + 1 < maxSize) {
+        //zwiększamy zmienną przechowującą rozmiar
+        size++;
+        int i = size - 1;
 
-    //poprawiamy strukturę kopca
-    while (i != 0 && pointer[parent(i)] > pointer[i])
-    {
-        swap(&pointer[i], &pointer[parent(i)]);
-        i = parent(i);
+        //dodajemy nową wartość na końcu tablicy
+        pointer[i] = value;
+
+        //poprawiamy strukturę kopca
+        while (i != 0 && pointer[i] < pointer[parent(i)]) {
+            //zamieniamy wartość z ojcem
+            swap(&pointer[i], &pointer[parent(i)]);
+            i = parent(i);
+        }
     }
+    else std::cout << "\nSIZE LIMIT REACHED\n";
+
 }
 
 void Heap::deleteElement() {
+    //jeśli są elementy w kopcu
+    if(size > 0) {
 
-    //alokacja pamięci na tablicę tymczasową ze zmienionym rozmiarem
-    int *tempPointer = new int[size - 1];
+        int lastElement = pointer[size - 1];
+        //ustawiamy ostatni element na 0
+        pointer[size - 1] = 0;
+        //przypisujemy pierwszy element jako ostatni
+        pointer[0] = lastElement;
+        //zmniejszamy rozmiar
+        size--;
+        //poprawiamy strukturę kopca
+        heapify(0);
 
-    //przepisywanie calej tablicy z wyjatkiem ostatniego elementu
-    for (int i = 0; i < size - 1; i++) {
-        tempPointer[i] = pointer[i];
     }
-
-    //zwalnianie pamięci i przypisywanie pod zmienną pointer nową tablicę
-    delete[] pointer;
-    pointer = tempPointer;
-
-    //zmniejszanie zmiennej przechowującej aktualny rozmiar
-    size--;
+    else std::cout << "\nHeap has no elements!\n";
 
 }
 
+
 //wyswietlanie kopca
-void Heap::showHeap() const {
-    if (pointer != nullptr) {
-        for (int i = 0; i < size; i++) {
-            std::cout << pointer[i] << std::endl;
+void Heap::showHeap(int space, int index){
+    if(size > 0) {
+        const int maxConsoleWidth = 120;
+
+        space += 10;
+
+        std::cout << std::endl;
+
+        if (index * 2 + 2 < size) {
+            showHeap(space, index * 2 + 2);
         }
-    } else {
-        std::cout << "\nNo elements";
+
+        std::cout << std::endl;
+
+        const int nodeValueLength = std::to_string(pointer[index]).length();
+        for (int i = size; i < std::min(space, maxConsoleWidth - nodeValueLength); i++) {
+            std::cout << " ";
+        }
+        std::cout << pointer[index] << std::endl;
+
+        if (index * 2 + 1 < size) {
+            showHeap(space, index * 2 + 1);
+        }
     }
+    else std::cout << "\nHeap has no elements!\n";
+
 }
 
 void Heap::swap(int *a, int *b) {
@@ -115,4 +141,22 @@ bool Heap::findValue(int value) {
     //jesli nie znaleziono elementu zwroc false
     std::cout << "\nValue was not found\n";
     return false;
+}
+
+void Heap::heapify(int i) {
+    //przypisujemy indeks najmniejszego elementu jako indeks podanego węzła
+    int smallest = i;
+    int left = 2 * smallest + 1;
+    int right = 2 * smallest + 2;
+    //sprawdzamy czy lewy syn jest mniejszy niż aktualny najmniejszy element
+    if(left < size && pointer[left] < pointer[smallest]) smallest = left;
+    //sprawdzamy czy prawy syn jest mniejszy niż aktualny najmniejszy element
+    if(right < size && pointer[right] < pointer[smallest]) smallest = right;
+    //jeśli najmniejszy element nie jest na swoim miejscu
+    if(smallest != i){
+        //zamieniamy elementy
+        swap(&pointer[i], &pointer[smallest]);
+        //poprawiamy strukturę poddrzewa
+        heapify(smallest);
+    }
 }
