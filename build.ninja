@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/
+cmake_ninja_workdir = G$:/Projekt_SDiZO/
 # =============================================================================
 # Object build statements for EXECUTABLE target projekt_pierwszy
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projek
 
 build cmake_object_order_depends_target_projekt_pierwszy: phony || CMakeFiles/projekt_pierwszy.dir
 
-build CMakeFiles/projekt_pierwszy.dir/main.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/main.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/main.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/main.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\main.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -57,7 +57,7 @@ build CMakeFiles/projekt_pierwszy.dir/main.cpp.obj: CXX_COMPILER__projekt_pierws
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/utils/FileRandomizer.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/utils/FileRandomizer.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/utils/FileRandomizer.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/utils/FileRandomizer.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\utils\FileRandomizer.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -65,7 +65,7 @@ build CMakeFiles/projekt_pierwszy.dir/utils/FileRandomizer.cpp.obj: CXX_COMPILER
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/table/Table.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/table/Table.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/table/Table.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/table/Table.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\table\Table.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -73,7 +73,7 @@ build CMakeFiles/projekt_pierwszy.dir/structures/table/Table.cpp.obj: CXX_COMPIL
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/testers/Tester.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/testers/Tester.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/testers/Tester.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/testers/Tester.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\testers\Tester.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -81,7 +81,7 @@ build CMakeFiles/projekt_pierwszy.dir/testers/Tester.cpp.obj: CXX_COMPILER__proj
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/utils/Timer.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/utils/Timer.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/utils/Timer.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/utils/Timer.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\utils\Timer.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -89,7 +89,7 @@ build CMakeFiles/projekt_pierwszy.dir/utils/Timer.cpp.obj: CXX_COMPILER__projekt
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/testers/AutomaticTester.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/testers/AutomaticTester.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/testers/AutomaticTester.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/testers/AutomaticTester.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\testers\AutomaticTester.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -97,7 +97,7 @@ build CMakeFiles/projekt_pierwszy.dir/testers/AutomaticTester.cpp.obj: CXX_COMPI
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/list/List.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/list/List.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/list/List.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/list/List.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\list\List.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -105,7 +105,7 @@ build CMakeFiles/projekt_pierwszy.dir/structures/list/List.cpp.obj: CXX_COMPILER
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/list/ListElement.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/list/ListElement.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/list/ListElement.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/list/ListElement.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\list\ListElement.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -113,7 +113,7 @@ build CMakeFiles/projekt_pierwszy.dir/structures/list/ListElement.cpp.obj: CXX_C
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/heap/Heap.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/heap/Heap.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/heap/Heap.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/heap/Heap.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\heap\Heap.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -121,7 +121,7 @@ build CMakeFiles/projekt_pierwszy.dir/structures/heap/Heap.cpp.obj: CXX_COMPILER
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/tree/Tree.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/tree/Tree.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/tree/Tree.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/tree/Tree.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\tree\Tree.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -129,7 +129,7 @@ build CMakeFiles/projekt_pierwszy.dir/structures/tree/Tree.cpp.obj: CXX_COMPILER
   TARGET_COMPILE_PDB = CMakeFiles\projekt_pierwszy.dir\
   TARGET_PDB = projekt_pierwszy.pdb
 
-build CMakeFiles/projekt_pierwszy.dir/structures/tree/Node.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release C$:/Users/antek/Desktop/studia/4.sem/SDiZO$ projekt/projekt_pierwszy/structures/tree/Node.cpp || cmake_object_order_depends_target_projekt_pierwszy
+build CMakeFiles/projekt_pierwszy.dir/structures/tree/Node.cpp.obj: CXX_COMPILER__projekt_pierwszy_Release G$:/Projekt_SDiZO/structures/tree/Node.cpp || cmake_object_order_depends_target_projekt_pierwszy
   DEP_FILE = CMakeFiles\projekt_pierwszy.dir\structures\tree\Node.cpp.obj.d
   FLAGS = -O3 -DNDEBUG -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\projekt_pierwszy.dir
@@ -162,7 +162,7 @@ build projekt_pierwszy.exe: CXX_EXECUTABLE_LINKER__projekt_pierwszy_Release CMak
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\antek\Desktop\studia\4.sem\SDiZO projekt\projekt_pierwszy" && "C:\Program Files\JetBrains\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D G:\Projekt_SDiZO && "C:\Program Files\JetBrains\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -173,7 +173,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D "C:\Users\antek\Desktop\studia\4.sem\SDiZO projekt\projekt_pierwszy" && "C:\Program Files\JetBrains\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\antek\Desktop\studia\4.sem\SDiZO projekt\projekt_pierwszy" -B"C:\Users\antek\Desktop\studia\4.sem\SDiZO projekt\projekt_pierwszy""
+  COMMAND = cmd.exe /C "cd /D G:\Projekt_SDiZO && "C:\Program Files\JetBrains\CLion 2022.3.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SG:\Projekt_SDiZO -BG:\Projekt_SDiZO"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -191,7 +191,7 @@ build projekt_pierwszy: phony projekt_pierwszy.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/antek/Desktop/studia/4.sem/SDiZO projekt/projekt_pierwszy
+# Folder: G:/Projekt_SDiZO
 
 build all: phony projekt_pierwszy.exe
 

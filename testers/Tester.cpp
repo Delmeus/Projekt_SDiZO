@@ -240,7 +240,7 @@ void Tester::testHeap() {
         std::cin >> answer;
         switch (answer) {
             case 1:{
-                heap.showHeap(0, 0);
+                heap.showHeap(0,0);
                 break;
             }
             case 2:{
